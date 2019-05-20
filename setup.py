@@ -30,6 +30,7 @@ setup(
         # 'unscramble': ['data/*.txt']
     # },
     include_package_data=True,
+    
     # data_files=[dictionary],
 )
 
