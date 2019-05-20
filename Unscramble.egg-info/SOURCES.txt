@@ -1,11 +1,13 @@
 MANIFEST.in
 README.md
 setup.py
+./data/words_alpha.txt
 Unscramble.egg-info/PKG-INFO
 Unscramble.egg-info/SOURCES.txt
 Unscramble.egg-info/dependency_links.txt
 Unscramble.egg-info/requires.txt
 Unscramble.egg-info/top_level.txt
+data/words_alpha.txt
 unscramble/__init__.py
 unscramble/unscramble.py
 unscramble/data/words_alpha.txt

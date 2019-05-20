@@ -1,6 +1,7 @@
 from itertools import permutations
 from tqdm import tqdm
 from collections import defaultdict
+import os
 
 # from tqdm import tqdm_notebook as tqdm
 
@@ -14,10 +15,21 @@ class Unscramble:
         """
         self.word = word.lower()
 
-    def _load_dictionary(self, path = "./data/"):
+    def _load_dictionary(self, path = './data/'):
         """To Do
         """
+        # fileName = "words_alpha.txt"
         fileName = path + "words_alpha.txt"
+
+        dataFile = os.path.join('data','words_alpha.txt')
+        print("Data File Location = " + dataFile)
+
+        dirpath = os.getcwd()
+        print("current directory is : " + dirpath)
+        foldername = os.path.basename(dirpath)
+        print("Directory name is : " + foldername)
+        scriptpath = os.path.realpath(__file__)
+        print("Script path is : " + scriptpath)
         # fileName = "../data/words_alpha.txt"
         dictionary = [line.rstrip("\n") for line in open(fileName)]
         return dictionary
@@ -78,10 +90,10 @@ class Unscramble:
 
         print("\n---------------------------------------\n")
 
-    def find_words(self, upto=4, exact_length=None):
+    def find_words(self, upto=4, exact_length=None, path = "./data/"):
         """To Do
         """
-        dictionary = self._load_dictionary()
+        dictionary = self._load_dictionary(path)
         possible_words = self._create_permutations(upto, exact_length)
         actual_words = [
             word

@@ -1,9 +1,11 @@
 from setuptools import setup, find_packages
+import os
 
 long_description='''
 Generate dictionary words by unscramblig provided word.
 '''
 
+dictionary = os.path.join('data','words_alpha.txt')
 
 setup(
     name='Unscramble',
@@ -24,9 +26,10 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_data={
-        'unscramble': ['data/*.txt']
-    },
-    include_package_data=True,
+    # package_data={
+        # 'unscramble': ['data/*.txt']
+    # },
+    # include_package_data=True,
+    # data_files=[dictionary],
 )
 
