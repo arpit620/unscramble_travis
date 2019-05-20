@@ -1,0 +1,8 @@
+README.md
+setup.py
+Unscramble.egg-info/PKG-INFO
+Unscramble.egg-info/SOURCES.txt
+Unscramble.egg-info/dependency_links.txt
+Unscramble.egg-info/top_level.txt
+unscramble/__init__.py
+unscramble/unscramble.py

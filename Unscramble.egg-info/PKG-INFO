@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Unscramble
+Version: 0.1
+Summary: Unscramble a word
+Home-page: https://github.com/arpit625/unscramble
+Author: Arpit Gupta
+Author-email: arpit.gupta@ucdconnect.ie
+License: MIT
+Description: Long description goes here
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
