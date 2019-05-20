@@ -14,10 +14,11 @@ class Unscramble:
         """
         self.word = word.lower()
 
-    def _load_dictionary(self):
+    def _load_dictionary(self, path = "../data/"):
         """To Do
         """
-        fileName = "../data/words_alpha.txt"
+        fileName = path + "words_alpha.txt"
+        # fileName = "../data/words_alpha.txt"
         dictionary = [line.rstrip("\n") for line in open(fileName)]
         return dictionary
         # self.dictionary = ["hello", "world", "hell", "ehll", "ehl"]
