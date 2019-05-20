@@ -24,6 +24,9 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    package_data={
+        'unscramble': ['data/*.txt']
+    },
     include_package_data=True,
 )
 
