@@ -2,10 +2,6 @@ import pytest
 from unscramble import Unscramble
 from collections import defaultdict
 # import sys
-import sys,os
-sys.path.append(os.path.realpath('..'))
-
-print("Sys Path = " , sys.path)
 
 @pytest.fixture
 def unscramble():

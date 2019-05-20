@@ -18,18 +18,23 @@ class Unscramble:
     def _load_dictionary(self, path = './data/'):
         """To Do
         """
-        # fileName = "words_alpha.txt"
-        fileName = path + "words_alpha.txt"
+        path = os.path.abspath(os.path.dirname(__file__))
+        fileName = os.path.join(path, '../data/words_alpha.txt')
+        # fileName = path + "words_alpha.txt"
+        print("File Name : " + fileName)
 
-        # dataFile = os.path.join('data','words_alpha.txt')
-        # print("Data File Location = " + dataFile)
+        my_path = os.path.abspath(os.path.dirname(__file__))
+        print("My path : " + my_path)
 
-        # dirpath = os.getcwd()
-        # print("current directory is : " + dirpath)
-        # foldername = os.path.basename(dirpath)
-        # print("Directory name is : " + foldername)
-        # scriptpath = os.path.realpath(__file__)
-        # print("Script path is : " + scriptpath)
+        dataFile = os.path.join('data','words_alpha.txt')
+        print("Data File Location = " + dataFile)
+
+        dirpath = os.getcwd()
+        print("current directory is : " + dirpath)
+        foldername = os.path.basename(dirpath)
+        print("Directory name is : " + foldername)
+        scriptpath = os.path.realpath(__file__)
+        print("Script path is : " + scriptpath)
         # fileName = "../data/words_alpha.txt"
         dictionary = [line.rstrip("\n") for line in open(fileName)]
         return dictionary
