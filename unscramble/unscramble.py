@@ -20,25 +20,8 @@ class Unscramble:
         """
         path = os.path.abspath(os.path.dirname(__file__))
         fileName = os.path.join(path, '../data/words_alpha.txt')
-        # fileName = path + "words_alpha.txt"
-        print("File Name : " + fileName)
-
-        my_path = os.path.abspath(os.path.dirname(__file__))
-        print("My path : " + my_path)
-
-        dataFile = os.path.join('data','words_alpha.txt')
-        print("Data File Location = " + dataFile)
-
-        dirpath = os.getcwd()
-        print("current directory is : " + dirpath)
-        foldername = os.path.basename(dirpath)
-        print("Directory name is : " + foldername)
-        scriptpath = os.path.realpath(__file__)
-        print("Script path is : " + scriptpath)
-        # fileName = "../data/words_alpha.txt"
         dictionary = [line.rstrip("\n") for line in open(fileName)]
         return dictionary
-        # self.dictionary = ["hello", "world", "hell", "ehll", "ehl"]
 
     def _get_word_lengths(self, upto):
         """ To Do
