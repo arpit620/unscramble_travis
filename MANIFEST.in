@@ -1,2 +1,2 @@
 
-include unscramble/data/words_alpha.txt
+include data/words_alpha.txt
