@@ -14,7 +14,7 @@ class Unscramble:
         """
         self.word = word.lower()
 
-    def _load_dictionary(self, path = "../data/"):
+    def _load_dictionary(self, path = "./data/"):
         """To Do
         """
         fileName = path + "words_alpha.txt"
