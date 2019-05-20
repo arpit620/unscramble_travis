@@ -15,7 +15,7 @@ def unscramble():
 
 def test_load_dictionary(unscramble):
     # words = Unscramble("Search")
-    dictionary = unscramble._load_dictionary(path = "./data/")
+    dictionary = unscramble._load_dictionary()
     assert isinstance(dictionary, list), "Dictionary not a list"
     assert len(dictionary) > 1, "Dictionary is less than 100"
 
@@ -45,7 +45,7 @@ def test_get_defaultdict():
 
 def test_find_words():
     words = Unscramble("Hello")
-    dict_words = words.find_words(path = "./data/")
+    dict_words = words.find_words()
     assert len(dict_words[5]) == 1, "Length not 1"
     assert len(dict_words[4]) == 3, "Length not 3"
     assert len(dict_words[3]) == 0, "Length more than 0"

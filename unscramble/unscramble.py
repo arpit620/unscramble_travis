@@ -21,15 +21,15 @@ class Unscramble:
         # fileName = "words_alpha.txt"
         fileName = path + "words_alpha.txt"
 
-        dataFile = os.path.join('data','words_alpha.txt')
-        print("Data File Location = " + dataFile)
+        # dataFile = os.path.join('data','words_alpha.txt')
+        # print("Data File Location = " + dataFile)
 
-        dirpath = os.getcwd()
-        print("current directory is : " + dirpath)
-        foldername = os.path.basename(dirpath)
-        print("Directory name is : " + foldername)
-        scriptpath = os.path.realpath(__file__)
-        print("Script path is : " + scriptpath)
+        # dirpath = os.getcwd()
+        # print("current directory is : " + dirpath)
+        # foldername = os.path.basename(dirpath)
+        # print("Directory name is : " + foldername)
+        # scriptpath = os.path.realpath(__file__)
+        # print("Script path is : " + scriptpath)
         # fileName = "../data/words_alpha.txt"
         dictionary = [line.rstrip("\n") for line in open(fileName)]
         return dictionary
