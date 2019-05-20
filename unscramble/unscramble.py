@@ -19,7 +19,7 @@ class Unscramble:
         """To Do
         """
         path = os.path.abspath(os.path.dirname(__file__))
-        fileName = os.path.join(path, '../data/words_alpha.txt')
+        fileName = os.path.join(path, 'data/words_alpha.txt')
         dictionary = [line.rstrip("\n") for line in open(fileName)]
         return dictionary
 
