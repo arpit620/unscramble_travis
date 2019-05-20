@@ -29,7 +29,7 @@ setup(
     # package_data={
         # 'unscramble': ['data/*.txt']
     # },
-    include_package_data=True,
+    # include_package_data=True,
     # data_files=[dictionary],
 )
 
